@@ -16,8 +16,8 @@ jobs:
 workflows:
  build_and_test:
   jobs:
-  - build
-   filters:
+  - build:
+     filters:
       branches:
        only: main
   - test:
