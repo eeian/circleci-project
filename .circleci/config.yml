@@ -18,9 +18,9 @@ workflows:
   jobs:
    - build
    - test:
-    requires:
+     requires:
      - build
-    filters:
+     filters:
      branches:
       only: main
 
